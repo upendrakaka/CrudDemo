@@ -21,6 +21,7 @@ public class DemoController {
     public String notesList(Model model) {
         model.addAttribute("notesList", notesService.findAll());
         return "notesList";
+		
     }
 
     @RequestMapping(value={"/notesEdit","/notesEdit/{id}"}, method = RequestMethod.GET)
