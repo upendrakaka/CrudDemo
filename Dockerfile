@@ -1,4 +1,4 @@
-FROM java:8
+FROM java:9
 VOLUME /tmp
 ARG JAR_FILE=/target/crudDemo.jar
 ADD ${JAR_FILE} crudDemo.jar
